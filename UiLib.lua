@@ -322,7 +322,7 @@ function Library:Create(hubname, gamename, presetColor)
 
 			SectionLabel.Name = "Section"
 			SectionLabel.Parent = Page
-			SectionLabel.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+			SectionLabel.BackgroundColor3 = Color3.fromRGB(0, 41, 43)
 			SectionLabel.BorderSizePixel = 0
 			SectionLabel.Size = UDim2.new(0, 465, 0, 46)
 			SectionLabel.Font = Enum.Font.SourceSans
