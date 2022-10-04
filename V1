@@ -1,0 +1,18 @@
+	--[[
+	Color And Icons:
+	
+	Label:
+	colorstroke = Color3.fromRGB(135, 135, 135),
+	colorframe = Color3.fromRGB(47, 47, 47),
+	icon = "rbxassetid://10913767273"
+	
+	Info:
+	colorstroke = Color3.fromRGB(0, 100, 136),
+	colorframe = Color3.fromRGB(0, 52, 71),
+	icon = "rbxassetid://10913760482"
+	
+	Warning:
+	colorstroke = Color3.fromRGB(144, 132, 0,
+	colorframe = Color3.fromRGB(67, 62, 0),
+	icon = "rbxassetid://10913705702"
+	]]
