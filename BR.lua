@@ -4,7 +4,11 @@ local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local CoreGui = game:GetService("CoreGui")
 local uis = game:GetService("UserInputService")
-
+do
+	if CoreGui:FindFirstChild("Hub") then
+		CoreGui:FindFirstChild("Hub"):Destroy()
+	end
+end
 --vars
 local localp = Players.LocalPlayer
 local mouse = localp:GetMouse()
