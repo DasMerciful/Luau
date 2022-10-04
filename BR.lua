@@ -13,22 +13,6 @@ local tweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection
 
 local Library = {}
 
-
-function Library:validate(defaults, options)
-	for i, v in pairs(defaults) do
-		if options[i] == nil then
-			options[i] = v
-		end
-	end
-	return options
-end
-
-function Library:Tween(object, goal, callback)
-	local tween = TweenService:Create(object, tweenInfo, goal)
-	tween.Completed:Connect(callback or function() end)
-	tween:Play()
-end
-
 function dragify(Frame) -- credits: bloodball on github
 	dragToggle = nil
 	dragSpeed = 0.25
@@ -65,6 +49,22 @@ function dragify(Frame) -- credits: bloodball on github
 		end
 	end)
 end
+
+function Library:validate(defaults, options)
+	for i, v in pairs(defaults) do
+		if options[i] == nil then
+			options[i] = v
+		end
+	end
+	return options
+end
+
+function Library:Tween(object, goal, callback)
+	local tween = TweenService:Create(object, tweenInfo, goal)
+	tween.Completed:Connect(callback or function() end)
+	tween:Play()
+end
+
 
 function Library:Init(options)
 	options = Library:validate({
@@ -873,3 +873,5 @@ function Library:Init(options)
 	dragify(GUI["2"])
 	return GUI
 end
+
+return Library
