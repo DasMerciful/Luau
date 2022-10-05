@@ -12,7 +12,7 @@
 	icon = "rbxassetid://10913760482"
 	
 	Warning:
-	colorstroke = Color3.fromRGB(144, 132, 0,
+	colorstroke = Color3.fromRGB(144, 132, 0),
 	colorframe = Color3.fromRGB(67, 62, 0),
 	icon = "rbxassetid://10913705702"
 	]]
