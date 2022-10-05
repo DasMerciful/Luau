@@ -223,7 +223,7 @@ function Library:Init(options)
 		
 
 	end
-	GUI["d"].MouseButton1Click:connect(function() Hub:Destroy() end)
+	
 	function GUI:Tab(options)
 		options = Library:validate({
 			name = "Preview Tab";
